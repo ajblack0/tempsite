@@ -4,20 +4,42 @@
 html {
     font-size: 62.5%;
     color: rgb(235, 235, 245);
-    background-color: rgb(74, 74, 95);
+    background-color: rgb(50, 53, 80);
+    height: 100%;
 }
 body {
+    margin: 0px;
+    font-size: 1.8rem;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    height: 100%;
+}
+.container {
+    display: flex;
+    flex-flow: row;
+    height: 100%;
+}
+.sidebar {
+    margin: 0px;
+    flex-basis: 30rem;
+    height: 100%;
+    background-color: rgb(40, 40, 63);
 }
 .gallery-container {
+    flex-basis: 100%;
+    height: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    overflow: auto;
 }
 .gallery-element {
     flex-basis: 40rem;
-    height: 20rem;
+    height: 30rem;
     margin: 1rem;
-    font-size: 1.8rem;
-    background-color: rgb(57, 57, 71);
+    padding: 1rem;
+    background-color: rgb(40, 40, 63);
+    box-shadow: .5rem .5rem .1rem rgb(33, 34, 53);
+    border-radius: 1rem;
+    color: inherit;
+    text-decoration: inherit;
 }
