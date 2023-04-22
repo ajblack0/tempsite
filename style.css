@@ -4,7 +4,7 @@
 html {
     font-size: 62.5%;
     color: rgb(235, 235, 245);
-    background-color: rgb(35, 37, 53);
+    background-color: rgb(35, 38, 53);
     height: 100%;
 }
 body {
@@ -18,7 +18,7 @@ body {
     width: 100%;
     position: fixed;
     box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.3);
-    background-color: rgb(22, 22, 34);
+    background-color: rgb(23, 25, 34);
     overflow: hidden;
 }
 #topbar a {
@@ -30,7 +30,6 @@ body {
     height: auto;
     padding-top: 4rem;
     overflow: auto;
-    text-align: center;
 }
 .gallery-container {
     display: flex;
@@ -42,7 +41,7 @@ body {
     height: 30rem;
     margin: 1.5rem;
     padding: 2rem;
-    background-color: rgb(44, 44, 71);
+    background-color: rgb(44, 50, 71);
     border-radius: 1rem;
     border: .4rem solid transparent;
     color: inherit;
@@ -50,8 +49,8 @@ body {
     transition-duration: 0.1s;
 }
 .gallery-container a:hover {
-    background-color: rgb(42, 42, 75);
-    border-color: rgb(55, 55, 90);
+    background-color: rgb(44, 51, 75);
+    border-color: rgb(55, 63, 90);
 }
 @media (max-width: 600px) {
     
