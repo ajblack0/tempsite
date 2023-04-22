@@ -4,7 +4,7 @@
 html {
     font-size: 62.5%;
     color: rgb(235, 235, 245);
-    background-color: rgb(30, 32, 56);
+    background-color: rgb(35, 37, 53);
     height: 100%;
 }
 body {
@@ -13,41 +13,43 @@ body {
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     height: 100%;
 }
-#main-container {
-    display: grid;
-    grid-template-columns: 30rem auto;
-    height: 100%;
-}
-#sidebar {
+#topbar {
     margin: 0;
-    height: 100%;
-    padding-left: 2.5rem;
-    background-color: rgb(39, 39, 72);
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.3);
+    background-color: rgb(22, 22, 34);
     overflow: hidden;
 }
+#topbar a {
+    padding: 0.9rem;
+    text-align: center;
+    display: inline-block;
+}
 .main {
+    height: auto;
+    padding-top: 4rem;
     overflow: auto;
     text-align: center;
 }
 .gallery-container {
-    height: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
-.gallery-element {
+.gallery-container a {
     flex-basis: 40rem;
     height: 30rem;
     margin: 1.5rem;
     padding: 2rem;
-    background-color: rgb(39, 39, 72);
+    background-color: rgb(44, 44, 71);
     border-radius: 1rem;
     border: .4rem solid transparent;
     color: inherit;
     text-decoration: inherit;
     transition-duration: 0.1s;
 }
-.gallery-element:hover {
+.gallery-container a:hover {
     background-color: rgb(42, 42, 75);
     border-color: rgb(55, 55, 90);
 }
