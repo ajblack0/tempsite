@@ -16,11 +16,15 @@ body {
     position: fixed;
     box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.3);
     background-color: rgb(23, 25, 34);
+    padding-left: 2rem;
 }
 #topbar a {
     padding: 1rem;
     text-align: center;
     display: inline-block;
+}
+#topbar a:hover {
+    background-color: rgb(34, 37, 49);
 }
 .main-container {
     height: 100%;
@@ -57,10 +61,16 @@ a {
     flex-flow: row;
     justify-content: center;
 }
-.app-menu {
+.grow-menu {
+    flex-grow: 1;
+}
+.static-menu {
     flex-basis: 30rem;
 }
 #viewport {
-    flex-grow: 1;
     background: black;
+}
+.square-viewport {
+    height: 100%;
+    width: calc(100vh - 4.4rem);
 }
