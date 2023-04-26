@@ -1,6 +1,3 @@
-/* {
-    border: 1px solid red;
-}*/
 html {
     font-size: 62.5%;
     color: rgb(235, 235, 245);
@@ -19,17 +16,16 @@ body {
     position: fixed;
     box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.3);
     background-color: rgb(23, 25, 34);
-    overflow: hidden;
 }
 #topbar a {
-    padding: 0.9rem;
+    padding: 1rem;
     text-align: center;
     display: inline-block;
 }
-.main {
-    height: auto;
-    padding-top: 4rem;
-    overflow: auto;
+.main-container {
+    height: 100%;
+    padding-top: 4.4rem;
+    box-sizing: border-box;
 }
 .gallery-container {
     display: flex;
@@ -44,14 +40,27 @@ body {
     background-color: rgb(44, 50, 71);
     border-radius: 1rem;
     border: .4rem solid transparent;
-    color: inherit;
-    text-decoration: inherit;
+    box-shadow: .2rem .2rem .4rem rgba(0, 0, 0, 0.2);
     transition-duration: 0.1s;
 }
 .gallery-container a:hover {
     background-color: rgb(44, 51, 75);
     border-color: rgb(55, 63, 90);
 }
-@media (max-width: 600px) {
-    
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+.app-container {
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+.app-menu {
+    flex-basis: 30rem;
+}
+#viewport {
+    flex-grow: 1;
+    background: black;
 }
